@@ -1,0 +1,232 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Chonburi', cursive; */
+}
+body 
+{
+    background-color: #eee;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* .container
+{
+    margin: 0 auto;
+    width: 1220px;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+} */
+/* header---------------------------------------------- */
+.header  h1 
+{
+    background-color: rgb(117, 181, 184);
+    text-align: center;
+    color: rgb(12, 12, 155);
+    font-family: 'Chonburi', cursive;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.header  .contentBox 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+    background-color: #00a65a;
+}
+.header  .contentBox .imgBox 
+{
+    display: flex;
+    align-items: center;
+    background-color: #008d4c;
+    padding: 3px 8px;
+}
+.header  .contentBox .imgBox  img 
+{
+    width: 70px;
+    height: 60px;   
+}
+
+.formLog 
+{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: linear .3s;
+
+}
+.formLog:hover
+{
+    color: black;
+}
+/* menu ------------------------------- */
+.menuBtn 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition:all .3s ease;
+}
+.menuBtn .btnHambuger
+{
+    width: 30px;
+    margin: auto;
+    height: 4px;
+    border-radius: 3px;
+    transition: all .3s ease;
+    background-color: white;
+}
+.menuBtn .btnHambuger::before,
+.menuBtn .btnHambuger::after
+{
+    position: absolute;
+    content: '';
+    width: 30px;
+    margin: auto;
+    height: 4px;
+    transition: all .3s ease;
+    border-radius: 3px;
+    background-color: white;
+}
+.menuBtn .btnHambuger::before
+{
+    width: 17px;
+    transform: translateY(-10px);
+}
+.menuBtn .btnHambuger::after
+{
+    width: 17px;
+    transform: translateY(10px);
+    right: 0;
+}
+/* Open menu */
+.menuBtn.openmenu .btnHambuger::before
+{
+    transform: rotate(80deg) translate(-5.8px,-6.5px);
+}
+.menuBtn.openmenu .btnHambuger::after
+{
+    transform: rotate(80deg) translate(5.8px,6.5px);
+}
+.menuBtn.openmenu .btnHambuger
+{
+    transform: rotate(-40deg);
+}
+
+/*Button menu ------------------------------- */
+/* menu-------------------------------------- */
+
+.menuBar
+{
+    position: relative;
+    background-color:seagreen;
+    width: 160px;
+    height: 100%;
+    left: -100%;
+    transition: .5s ease-in-out;
+
+}
+.menuBar .imgBox 
+{
+    background-color: #008d4c;
+    text-align: center;
+}
+
+.menuBar ul  li 
+{
+    position: relative;
+    background-color: #374a52;
+    border-bottom: 1px solid seagreen;
+    width: 100%;
+}
+.menuBar ul li a 
+{
+    display: block;
+    padding: 8px 12px;
+    color: white;
+    font-size: 18px;
+    transition: .4s;
+    margin-left: 5px;
+}
+.menuBar ul img 
+{
+    position: relative;
+    width: 22px;
+    align-items: center;
+    top: 3px;
+    margin-right: 2px;
+}
+.menuBar ul li.active
+{
+    border-left: 5px solid orange;
+}
+.menuBar ul li:hover
+{
+    border-left: 5px solid orange;
+
+}
+.menuBar ul li ul 
+{
+    display: none;
+    position: absolute;
+}
+.menuBar ul li ul li 
+{
+    width: 185px;
+}
+.menuBar ul li:hover ul 
+{
+    display: block;
+    border-left: 1px solid white;
+    left: 100%;
+    top: 0px;
+}
+.menuBar ul li a:hover
+{
+    margin-left: 15px;
+}
+
+/* check menu */
+#checkMenu
+{
+    display: none;
+    visibility: hidden;
+}
+#checkMenu:checked ~ .menuBar
+{
+    left: 0px;
+}
+
+.main
+{
+    display: flex;
+    position: relative;
+    width:100%;
+}
+.main .container
+{
+    background: url(img/hinh1.jpg);
+    height: 85vh;
+    width: 100%;
+    left: 180px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+
+}
+
+/* menu end-------------------------------------- */
