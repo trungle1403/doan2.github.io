@@ -237,27 +237,34 @@ a{
 {
     border-radius: 10px;
     background-color: #eee;
-    padding: 10px;
     transition: .5s;
     position: relative;
     margin: 10px;
+    overflow: hidden;
 }
 
-.main .container .content .box:hover 
+.main .container .content .box:hover .title
 {
-    background-color: rgb(85, 196, 224);
+    box-shadow: 0 0 0 10em teal;
 }
-.main .container .content .box p 
+.main .container .content .box .title
 {
     font-size: 25px;
-    color: sienna;
+    color: white;
     font-weight: 700;
+    background-color: teal;
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 0 0 20px 20px ;
+    transition: .5s linear;
+
 }
 .main .container .content  .imgBox
 {
     margin-top: 20px;
     max-width: 200px;
     max-height: 200px;
+    padding: 10px;
 }
 .main .container .content  .imgBox img 
 {
