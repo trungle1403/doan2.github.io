@@ -15,15 +15,12 @@ li{
 a{
     text-decoration: none;
 }
-/* .container
-{
-    margin: 0 auto;
-    width: 1220px;
-    height: auto;
-    background-color: white;
-    overflow: hidden;
-} */
+/* header + main +footer = 19+74+7 = 100vh :v */
 /* header---------------------------------------------- */
+.header
+{
+    height: 19vh;
+}
 .header  h1 
 {
     background-color: rgb(117, 181, 184);
@@ -40,20 +37,20 @@ a{
     align-items: center;
     padding: 0 10px;
     color: white;
-    background-color: #00a65a;
+    background-color:#008d4c ;
 }
 .header  .contentBox .imgBox 
 {
     display: flex;
     align-items: center;
-    background-color: #008d4c;
-    padding: 3px 8px;
+    padding: 4px 8px;
 }
 .header  .contentBox .imgBox  img 
 {
     width: 70px;
     height: 60px;   
 }
+
 .formLog 
 {
     border: 2px solid white;
@@ -131,7 +128,7 @@ a{
 .menuBar
 {
     position: relative;
-    background-color:seagreen;
+    background-color:#00a65a;
     width: 160px;
     height: 100%;
     left: -100%;
@@ -140,7 +137,6 @@ a{
 }
 .menuBar .imgBox 
 {
-    background-color: #008d4c;
     text-align: center;
 }
 
@@ -217,8 +213,8 @@ a{
 }
 .main .container
 {
-    background: url(img/hinh1.jpg);
-    height: 85vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/bg.jpg);
+    height: 74vh;
     width: 100%;
     left: 180px;
     background-position: center;
@@ -229,3 +225,25 @@ a{
 }
 
 /* menu end-------------------------------------- */
+
+/* footer-------------------------------------- */
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #008d4c;
+    padding: 0 30px;
+    height: 7vh;
+    color: whitesmoke;
+}
+.footer p span 
+{
+    color: gold;
+    border-left: 2px solid;
+    padding-left: 5px;
+}
+
+
+/* footer end-------------------------------------- */
