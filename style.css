@@ -242,7 +242,10 @@ a{
     margin: 10px;
     overflow: hidden;
 }
-
+.main .container .content .box a 
+{
+    display: block;
+}
 .main .container .content .box:hover .title
 {
     box-shadow: 0 0 0 10em teal;
@@ -283,12 +286,15 @@ a{
     background-color: #008d4c;
     padding: 5px 30px;
     min-height: 7vh;
+    color: whitesmoke !important;
+}
+.footer a 
+{
     color: whitesmoke;
 }
 .footer p span 
 {
     color: gold;
-    border-left: 2px solid;
     padding-left: 5px;
 }
 
